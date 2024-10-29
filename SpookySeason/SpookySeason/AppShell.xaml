@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SpookySeason.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SpookySeason"
+    Shell.FlyoutBehavior="Disabled"
+    Title="SpookySeason">
+
+    <TabBar>
+        <Tab Title="Film"
+            Icon="icon_notes.png">
+            <ShellContent ContentTemplate="{DataTemplate local:FilmPage}"/>
+        </Tab>
+        <Tab Title="Archive"
+            Icon="icon_archive.png">
+            <ShellContent ContentTemplate="{DataTemplate local:WatchedArchive}"/>
+        </Tab>
+        <Tab Title="About"
+            Icon="icon_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}"/>
+        </Tab>
+    </TabBar>
+</Shell>

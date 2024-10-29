@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpookySeason.FilmPage"
+             Title="Spooky Films">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Reset" IconImageSource="reset_icon.png" 
+                     Order="Primary" 
+                     Priority="0" 
+                     Clicked="OnResetClicked" />
+    </ContentPage.ToolbarItems>
+    
+    <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Image x:Name="FilmImage" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" 
+               WidthRequest="100" 
+               HeightRequest="200" />
+
+        <Label x:Name="FilmLabel" 
+               Text="There are 0 films left in your list" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" />
+
+        <Button Text="Get Spooky" 
+                FontSize="18"
+                Clicked="OnSelectFilmClicked" 
+                HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

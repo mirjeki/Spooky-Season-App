@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SpookySeason.FilmArchivePage"
+             Title="Film Review">
+    <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <StackLayout Padding="20" Spacing="15">
+            <!-- Film Title -->
+            <Label Text="{Binding Title}" FontSize="Large" HorizontalOptions="Center" />
+
+            <!-- Film Score -->
+            <StackLayout Orientation="Horizontal" Padding="20" Spacing="15">
+                <Label Text="Rating:" FontSize="Medium" />
+                <Label Text="{Binding Rating}" FontSize="Medium" />
+            </StackLayout>
+
+            <!-- Film Comments -->
+            <StackLayout Orientation="Vertical" Padding="20" Spacing="15">
+                <Label Text="Comments:" FontSize="Medium" />
+                <Editor Text="{Binding Comments}" AutoSize="TextChanges" IsReadOnly="True" />
+            </StackLayout>
+
+            <Button Text="Share" Clicked="OnShareClicked" />
+
+            <Button Text="Back" Clicked="OnBackClicked" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

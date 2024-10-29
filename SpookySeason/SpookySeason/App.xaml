@@ -1,0 +1,60 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SpookySeason"
+             x:Class="SpookySeason.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="SpookyFontFamily">
+                <On Platform="iOS" Value="Creepster-Regular" />
+                <On Platform="Android" Value="Creepster-Regular.ttf#Creepster" />
+            </OnPlatform>
+            <!-- Colors -->
+            <Color x:Key="BackgroundColor">#1E1E1E</Color>
+            <!-- Dark background -->
+            <Color x:Key="PrimaryTextColor">#FF6F61</Color>
+            <!-- Blood red text -->
+            <Color x:Key="AccentColor">#D8BFD8</Color>
+            <!-- Ghostly purple -->
+            <Color x:Key="ButtonBackgroundColor">#FF4500</Color>
+            <!-- Orange button -->
+
+            <!-- Styles -->
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColor}" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource SpookyFontFamily}" />
+                <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="FontFamily" Value="{StaticResource SpookyFontFamily}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="20" />
+            </Style>
+
+            <Style TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#1E1E1E" />
+                <!-- Dark background -->
+                <Setter Property="BorderColor" Value="Orange" />
+                <!-- Orange border for spooky effect -->
+                <Setter Property="CornerRadius" Value="20" />
+                <!-- Rounded corners -->
+                <Setter Property="HasShadow" Value="True" />
+                <!-- Enable shadow -->
+                <Setter Property="Padding" Value="10" />
+                <!-- Internal padding -->
+            </Style>
+        </ResourceDictionary>
+        <!--<ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>-->
+    </Application.Resources>
+</Application>

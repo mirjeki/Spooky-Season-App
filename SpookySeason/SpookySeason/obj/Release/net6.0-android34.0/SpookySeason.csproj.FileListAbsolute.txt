@@ -1,0 +1,5 @@
+C:\Portfolio\Programs\SpookySeason\SpookySeason\obj\Release\net6.0-android34.0\SpookySeason.csproj.AssemblyReference.cache
+C:\Portfolio\Programs\SpookySeason\SpookySeason\obj\Release\net6.0-android34.0\SpookySeason.GeneratedMSBuildEditorConfig.editorconfig
+C:\Portfolio\Programs\SpookySeason\SpookySeason\obj\Release\net6.0-android34.0\SpookySeason.AssemblyInfoInputs.cache
+C:\Portfolio\Programs\SpookySeason\SpookySeason\obj\Release\net6.0-android34.0\SpookySeason.AssemblyInfo.cs
+C:\Portfolio\Programs\SpookySeason\SpookySeason\obj\Release\net6.0-android34.0\SpookySeason.csproj.CoreCompileInputs.cache
