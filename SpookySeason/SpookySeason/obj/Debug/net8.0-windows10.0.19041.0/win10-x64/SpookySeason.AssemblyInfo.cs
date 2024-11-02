@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpookySeason")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b02adb1d50f9298cef3d0fb44e5254ff87f95567")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpookySeason")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpookySeason")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

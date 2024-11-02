@@ -34,6 +34,8 @@ public partial class WatchedArchive : ContentPage
             {
                 var json = await File.ReadAllTextAsync(filePath);
                 films = JsonSerializer.Deserialize<List<Film>>(json);
+                var orderedFilmList = new List<Film>(films.OrderByDescending(film => DateTime.TryParse(film.WatchedDate, out var date) ? date : DateTime.MinValue));
+                films = orderedFilmList;
             }
             else
             {
@@ -71,7 +73,7 @@ public partial class WatchedArchive : ContentPage
         var selectedFilm = e.CurrentSelection.FirstOrDefault() as Film;
         if (selectedFilm != null)
         {
-            await Navigation.PushAsync(new FilmArchivePage(selectedFilm));
+            await Navigation.PushAsync(new FilmArchivePage(selectedFilm, SaveFilmData));
         }
     }
 
@@ -82,7 +84,7 @@ public partial class WatchedArchive : ContentPage
 
         if (tappedFilm != null)
         {
-            await Navigation.PushAsync(new FilmArchivePage(tappedFilm));
+            await Navigation.PushAsync(new FilmArchivePage(tappedFilm, SaveFilmData));
         }
     }
 }

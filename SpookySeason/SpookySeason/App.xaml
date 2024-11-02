@@ -49,6 +49,8 @@
                 <Setter Property="Padding" Value="10" />
                 <!-- Internal padding -->
             </Style>
+            
+            <local:InverseBooleanConverter x:Key="InverseBooleanConverter" />
         </ResourceDictionary>
         <!--<ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

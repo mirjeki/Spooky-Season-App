@@ -12,5 +12,6 @@ namespace SpookySeason
         public bool Watched { get; set; }
         public int Rating { get; set; }
         public string Comments { get; set; }
+        public string WatchedDate { get; set; } = DateTime.Now.ToShortDateString();
     }
 }

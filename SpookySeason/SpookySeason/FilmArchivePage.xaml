@@ -2,20 +2,72 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SpookySeason.FilmArchivePage"
+             xmlns:local="clr-namespace:SpookySeason.ViewModels"
              Title="Film Review">
-    <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+    <ContentPage.ToolbarItems>
+        <!--<ToolbarItem Text="Edit" 
+                     Command="{Binding ToggleEditModeCommand}"/>
 
-        <StackLayout Padding="20" Spacing="15">
-            <!-- Film Title -->
+        <ToolbarItem Text="Save"
+                     Command="{Binding SaveChangesCommand}"/>-->
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Padding="10" Spacing="15">
+            <Label Text="Title" />
+            <Entry Text="{Binding CurrentFilm.Title}" IsReadOnly="{Binding IsEditMode, Converter={StaticResource InverseBooleanConverter}}" />
+
+            <Label Text="Watched Date" />
+            <DatePicker Date="{Binding CurrentFilm.WatchedDate, Mode=TwoWay}" 
+            IsEnabled="{Binding IsEditMode}" />
+            <!--<Entry Text="{Binding CurrentFilm.WatchedDate}" IsReadOnly="{Binding IsEditMode, Converter={StaticResource InverseBooleanConverter}}" />-->
+
+            <Label Text="Rating" />
+            <Picker SelectedItem="{Binding CurrentFilm.Rating}" 
+                Title="Select a Rating" 
+                IsEnabled="{Binding IsEditMode}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:Int32}">
+                        <x:Int32>0</x:Int32>
+                        <x:Int32>1</x:Int32>
+                        <x:Int32>2</x:Int32>
+                        <x:Int32>3</x:Int32>
+                        <x:Int32>4</x:Int32>
+                        <x:Int32>5</x:Int32>
+                        <x:Int32>6</x:Int32>
+                        <x:Int32>7</x:Int32>
+                        <x:Int32>8</x:Int32>
+                        <x:Int32>9</x:Int32>
+                        <x:Int32>10</x:Int32>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Comments" />
+            <Editor Text="{Binding CurrentFilm.Comments}" IsReadOnly="{Binding IsEditMode, Converter={StaticResource InverseBooleanConverter}}" />
+
+
+            <Button Text="Share" Clicked="OnShareClicked"/>
+
+            <Button Text="Back" Clicked="OnBackClicked"/>
+        </StackLayout>
+        <!--<StackLayout Padding="20" Spacing="15">
+             Film Title 
             <Label Text="{Binding Title}" FontSize="Large" HorizontalOptions="Center" />
 
-            <!-- Film Score -->
+             Watched Date 
+            <StackLayout Orientation="Vertical" Padding="20" Spacing="15">
+                <Label Text="Watched On:" FontSize="Medium" />
+                <Editor Text="{Binding WatchedDate}" AutoSize="TextChanges" IsReadOnly="True" />
+            </StackLayout>
+
+             Film Score 
             <StackLayout Orientation="Horizontal" Padding="20" Spacing="15">
                 <Label Text="Rating:" FontSize="Medium" />
                 <Label Text="{Binding Rating}" FontSize="Medium" />
             </StackLayout>
 
-            <!-- Film Comments -->
+             Film Comments 
             <StackLayout Orientation="Vertical" Padding="20" Spacing="15">
                 <Label Text="Comments:" FontSize="Medium" />
                 <Editor Text="{Binding Comments}" AutoSize="TextChanges" IsReadOnly="True" />
@@ -24,6 +76,6 @@
             <Button Text="Share" Clicked="OnShareClicked" />
 
             <Button Text="Back" Clicked="OnBackClicked" />
-        </StackLayout>
+        </StackLayout>-->
     </VerticalStackLayout>
 </ContentPage>

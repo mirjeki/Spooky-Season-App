@@ -9,6 +9,7 @@ public partial class FilmPage : ContentPage
     List<Film> films = new List<Film>();
     string filePath = "";
     private readonly AudioManager _audioManager;
+    private bool isEditMode;
 
     public FilmPage()
     {
@@ -28,12 +29,26 @@ public partial class FilmPage : ContentPage
     {
         try
         {
-            // Check if the file already exists in app data directory
             if (File.Exists(filePath))
             {
-                // Read from the app data directory
                 var json = await File.ReadAllTextAsync(filePath);
                 films = JsonSerializer.Deserialize<List<Film>>(json);
+                bool changesfound = false;
+
+                foreach (var film in films)
+                {
+                    if (string.IsNullOrEmpty(film.WatchedDate))
+                    {
+                        changesfound = true;
+                        film.WatchedDate = DateTime.Now.ToShortDateString();
+                    }
+                }
+
+                if (changesfound)
+                {
+                    var updatedData = JsonSerializer.Serialize(films);
+                    await File.WriteAllTextAsync(filePath, updatedData);
+                }
             }
             else
             {
@@ -77,7 +92,6 @@ public partial class FilmPage : ContentPage
         }
     }
 
-    // Method to save the film list to the JSON file
     private async void SaveFilmData()
     {
         var filePath = Path.Combine(FileSystem.AppDataDirectory, "films.json");
@@ -92,19 +106,16 @@ public partial class FilmPage : ContentPage
         {
             try
             {
-                // Copy the default JSON file from the app package to the local storage
-                using var stream = await FileSystem.OpenAppPackageFileAsync("films.json"); // This is the default JSON file
+                using var stream = await FileSystem.OpenAppPackageFileAsync("films.json");
                 using var reader = new StreamReader(stream);
                 var defaultJson = await reader.ReadToEndAsync();
 
                 // Overwrite the existing local JSON file with the default JSON
                 await File.WriteAllTextAsync(filePath, defaultJson);
 
-                // Reload the films list with the default data
                 films = JsonSerializer.Deserialize<List<Film>>(defaultJson);
                 await DisplayAlert("Success", "Data has been reset to default.", "OK");
 
-                // Optionally navigate back or refresh the page
                 await Navigation.PopAsync();
             }
             catch (Exception ex)

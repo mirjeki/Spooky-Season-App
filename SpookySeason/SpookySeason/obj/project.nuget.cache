@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "em9CwgqljpNLUoQAhdCocgf7x032L/i18VEOJz6qkje/kXbDM3FU7lJBRSOlhbNLPlGIqXbUvhJ9jPoXhwKN6A==",
+  "dgSpecHash": "idoAFFzMN7tJZE/O0ouenmDI+KTvzi549vd03G1IFXjeppOJZfmXqi9nHQ3KOijVv210O7pUgHWQT3wERhNu5Q==",
   "success": true,
-  "projectFilePath": "C:\\Portfolio\\Programs\\SpookySeason\\SpookySeason\\SpookySeason.csproj",
+  "projectFilePath": "C:\\Portfolio\\Programs\\Spooky-Season-App\\SpookySeason\\SpookySeason\\SpookySeason.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mirje\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\mirje\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

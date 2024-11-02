@@ -12,65 +12,65 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SpookySeason
-build_property.ProjectDir = C:\Portfolio\Programs\SpookySeason\SpookySeason\
+build_property.ProjectDir = C:\Portfolio\Programs\Spooky-Season-App\SpookySeason\SpookySeason\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/AboutPage.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/AboutPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.AboutPage.xaml
 build_metadata.AdditionalFiles.TargetPath = AboutPage.xaml
 build_metadata.AdditionalFiles.RelativePath = AboutPage.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/App.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/AppShell.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/FilmArchivePage.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/FilmArchivePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.FilmArchivePage.xaml
 build_metadata.AdditionalFiles.TargetPath = FilmArchivePage.xaml
 build_metadata.AdditionalFiles.RelativePath = FilmArchivePage.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/FilmDetailPage.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/FilmDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.FilmDetailPage.xaml
 build_metadata.AdditionalFiles.TargetPath = FilmDetailPage.xaml
 build_metadata.AdditionalFiles.RelativePath = FilmDetailPage.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/FilmPage.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/FilmPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.FilmPage.xaml
 build_metadata.AdditionalFiles.TargetPath = FilmPage.xaml
 build_metadata.AdditionalFiles.RelativePath = FilmPage.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/MainPage.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/Resources/Styles/Colors.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/Resources/Styles/Styles.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Portfolio/Programs/SpookySeason/SpookySeason/WatchedArchive.xaml]
+[C:/Portfolio/Programs/Spooky-Season-App/SpookySeason/SpookySeason/WatchedArchive.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SpookySeason.WatchedArchive.xaml
 build_metadata.AdditionalFiles.TargetPath = WatchedArchive.xaml

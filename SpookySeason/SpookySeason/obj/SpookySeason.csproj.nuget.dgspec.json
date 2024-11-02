@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Portfolio\\Programs\\SpookySeason\\SpookySeason\\SpookySeason.csproj": {}
+    "C:\\Portfolio\\Programs\\Spooky-Season-App\\SpookySeason\\SpookySeason\\SpookySeason.csproj": {}
   },
   "projects": {
-    "C:\\Portfolio\\Programs\\SpookySeason\\SpookySeason\\SpookySeason.csproj": {
+    "C:\\Portfolio\\Programs\\Spooky-Season-App\\SpookySeason\\SpookySeason\\SpookySeason.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Portfolio\\Programs\\SpookySeason\\SpookySeason\\SpookySeason.csproj",
+        "projectUniqueName": "C:\\Portfolio\\Programs\\Spooky-Season-App\\SpookySeason\\SpookySeason\\SpookySeason.csproj",
         "projectName": "SpookySeason",
-        "projectPath": "C:\\Portfolio\\Programs\\SpookySeason\\SpookySeason\\SpookySeason.csproj",
+        "projectPath": "C:\\Portfolio\\Programs\\Spooky-Season-App\\SpookySeason\\SpookySeason\\SpookySeason.csproj",
         "packagesPath": "C:\\Users\\mirje\\.nuget\\packages\\",
-        "outputPath": "C:\\Portfolio\\Programs\\SpookySeason\\SpookySeason\\obj\\",
+        "outputPath": "C:\\Portfolio\\Programs\\Spooky-Season-App\\SpookySeason\\SpookySeason\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
